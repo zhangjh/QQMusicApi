@@ -8,8 +8,9 @@ COPY . .
 
 VOLUME ["./data","./bin"]
 
-RUN npm config set registry https://registry.npmmirror.com \
-    && npm install && npm install cross-env -g
+#RUN npm config set registry https://registry.npmmirror.com \
+#    && npm install && npm install cross-env -g
+RUN npm install && npm install cross-env -g
 
 EXPOSE 80
 
